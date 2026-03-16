@@ -8,6 +8,8 @@ function renderNav(activePage) {
     nav.innerHTML = `
         <div class="nav-inner">
             <a href="index.html" class="nav-brand">
+                <img src="static/nus-logo.png" alt="NUS School of Computing">
+                <div class="nav-divider"></div>
                 <span>ECO Lab</span>
             </a>
             <button class="nav-toggle" aria-label="Toggle navigation">
@@ -61,6 +63,9 @@ function renderFooter() {
     footer.innerHTML = `
         <div class="footer-inner footer-flex">
             <div class="footer-left">
+                <div style="margin-bottom: 16px;">
+                    <img src="static/nus-logo.png" alt="NUS School of Computing" style="height: 36px; width: auto;">
+                </div>
                 <div class="footer-address">
                     <strong>ECO Lab — Embedded Computing Lab</strong><br>
                     Department of Computer Science, School of Computing<br>

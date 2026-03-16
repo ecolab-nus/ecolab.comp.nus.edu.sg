@@ -22,10 +22,10 @@ function renderNews(containerId, options = {}) {
                 const li = document.createElement('li');
                 li.style.cssText = 'padding: 12px 0;' + (i < Math.min(items.length, limit) - 1 ? ' border-bottom: 1px solid #e8eaed;' : '');
 
-                let html = `<span style="color: #1a73e8; font-size: 13px; font-weight: 500;">${item.date}</span><br>`;
+                let html = `<span style="color: #003D7C; font-size: 13px; font-weight: 500;">${item.date}</span><br>`;
                 html += `<span style="font-size: 14px;">${item.text}</span>`;
                 if (item.link) {
-                    html += ` <a href="${item.link}" target="_blank" style="color: #1a73e8; font-size: 13px;">[Link]</a>`;
+                    html += ` <a href="${item.link}" target="_blank" style="color: #003D7C; font-size: 13px;">[Link]</a>`;
                 }
 
                 li.innerHTML = html;

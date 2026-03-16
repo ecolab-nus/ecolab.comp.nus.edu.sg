@@ -5,6 +5,14 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&family=Lora:wght@400;500;600;700&display=swap');
 
+/* NUS Brand Colors */
+:root {
+    --nus-blue: #003D7C;
+    --nus-orange: #EF7C00;
+    --nus-blue-light: #e8eef5;
+    --nus-blue-hover: #002a56;
+}
+
 /* Reset & Base */
 *, *::before, *::after {
     margin: 0;
@@ -25,7 +33,7 @@ body {
 }
 
 a {
-    color: #1a73e8;
+    color: var(--nus-blue);
     text-decoration: none;
 }
 
@@ -47,6 +55,7 @@ img {
     z-index: 1000;
     background: #fff;
     border-bottom: 1px solid #e0e0e0;
+    border-top: 3px solid var(--nus-orange);
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     margin: 0 !important;
     padding: 0 !important;
@@ -67,9 +76,9 @@ img {
 .nav-brand {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     text-decoration: none;
-    color: #212121;
+    color: var(--nus-blue);
 }
 
 .nav-brand:hover {
@@ -77,8 +86,14 @@ img {
 }
 
 .nav-brand img {
-    height: 36px;
+    height: 28px;
     width: auto;
+}
+
+.nav-brand .nav-divider {
+    width: 1px;
+    height: 24px;
+    background: #d0d0d0;
 }
 
 .nav-brand span {
@@ -86,6 +101,7 @@ img {
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 1px;
+    color: var(--nus-blue);
 }
 
 .nav-links {
@@ -275,7 +291,7 @@ li:hover > .nav-dropdown {
     color: #212121;
     margin-bottom: 24px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #1a73e8;
+    border-bottom: 2px solid var(--nus-orange);
     display: inline-block;
 }
 
@@ -393,7 +409,7 @@ li:hover > .nav-dropdown {
 }
 
 .team-card-info h3 a:hover {
-    color: #1a73e8;
+    color: var(--nus-blue);
 }
 
 .team-card-info .role {
@@ -454,7 +470,7 @@ li:hover > .nav-dropdown {
    Blockquote
    ============================================ */
 blockquote {
-    border-left: 3px solid #1a73e8;
+    border-left: 3px solid var(--nus-blue);
     padding: 16px 24px;
     margin: 24px 0;
     background: #f8f9fa;
@@ -475,17 +491,17 @@ blockquote cite {
    Openings / Highlight Box
    ============================================ */
 .highlight-box {
-    background: #e8f0fe;
+    background: var(--nus-blue-light);
     border-radius: 8px;
     padding: 24px;
     margin: 24px 0;
-    border-left: 4px solid #1a73e8;
+    border-left: 4px solid var(--nus-blue);
 }
 
 .highlight-box h3 {
     font-size: 18px;
     margin-bottom: 8px;
-    color: #174ea6;
+    color: var(--nus-blue);
 }
 
 /* ============================================
@@ -625,7 +641,7 @@ blockquote cite {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-weight: 500;
-    color: #1a73e8;
+    color: var(--nus-blue);
     margin: 32px 0 16px;
     padding-bottom: 6px;
     border-bottom: 2px solid #e8eaed;
@@ -652,7 +668,7 @@ blockquote cite {
     font-size: 13px;
 }
 .pub-venue {
-    color: #1a73e8;
+    color: var(--nus-blue);
     font-style: italic;
     font-size: 13px;
 }
@@ -673,12 +689,12 @@ blockquote cite {
 }
 .pub-filter button:hover,
 .pub-filter button.active {
-    background: #1a73e8;
+    background: var(--nus-blue);
     color: #fff;
-    border-color: #1a73e8;
+    border-color: var(--nus-blue);
 }
 .pub-link {
-    color: #1a73e8;
+    color: var(--nus-blue);
     text-decoration: none;
     font-size: 13px;
     font-weight: 500;
@@ -705,8 +721,8 @@ blockquote cite {
     background: #fff;
 }
 .pub-search:focus {
-    border-color: #1a73e8;
-    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.12);
+    border-color: var(--nus-blue);
+    box-shadow: 0 0 0 3px rgba(0, 61, 124, 0.12);
 }
 .pub-search::placeholder {
     color: #9aa0a6;
