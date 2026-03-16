@@ -1,0 +1,405 @@
+[
+  {
+    "year": 2026,
+    "title": "A Data-Driven Dynamic Execution Orchestration Architecture",
+    "authors": "Zhenyu Bai, Pranav Dangi, Rohan Juneja, Zhaoying Li, Zhanglu Yan, Huiying Lan, Tulika Mitra",
+    "venue": "ASPLOS 2026",
+    "links": { "paper": "https://arxiv.org/abs/2602.17119" }
+  },
+  {
+    "year": 2026,
+    "title": "HighP: In-memory Acceleration of SpGEMM with High Bank-level Parallelism",
+    "authors": "Chen Dan, Huiying Lan, Pengcheng Yao, Zhaoying Li, Tulika Mitra",
+    "venue": "IEEE Transactions on Computers",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/11216138/" }
+  },
+  {
+    "year": 2025,
+    "title": "Embedded Systems Design: Milestones, Momentum, and the Frontier",
+    "authors": "Tulika Mitra",
+    "venue": "IEEE Design & Test",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/11142820/" }
+  },
+  {
+    "year": 2025,
+    "title": "Nexus machine: An active message inspired reconfigurable architecture for irregular workloads",
+    "authors": "Rohan Juneja, Pranav Dangi, Thilini Kaushalya Bandara, Tulika Mitra, Li-shiuan Peh",
+    "venue": "MICRO 2025",
+    "links": { "paper": "https://arxiv.org/abs/2502.12380" }
+  },
+  {
+    "year": 2025,
+    "title": "Building an Open CGRA Ecosystem for Agile Innovation",
+    "authors": "Rohan Juneja, Pranav Dangi, Thilini Kaushalya Bandara, Zhaoying Li, Dhananjaya Wijerathne, Li-Shiuan Peh, Tulika Mitra",
+    "venue": "ICCAD 2025",
+    "links": { "paper": "https://arxiv.org/abs/2508.19090", "github": "https://github.com/ecolab-nus/morpher-v2" }
+  },
+  {
+    "year": 2025,
+    "title": "Enhancing CGRA Efficiency Through Aligned Compute and Communication Provisioning",
+    "authors": "Zhaoying Li, Pranav Dangi, Chenyang Yin, Thilini Kaushalya Bandara, Rohan Juneja, Cheng Tan, Zhenyu Bai, Tulika Mitra",
+    "venue": "ASPLOS 2025",
+    "links": { "paper": "https://arxiv.org/abs/2412.08137" }
+  },
+  {
+    "year": 2025,
+    "title": "Rewire: Advancing CGRA Mapping Through a Consolidated Routing Paradigm",
+    "authors": "Zhaoying Li, Dan Wu, Dhananjaya Wijerathne, Dan Chen, Huize Li, Cheng Tan, Tulika Mitra",
+    "venue": "DAC 2025",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/11133240/" }
+  },
+  {
+    "year": 2025,
+    "title": "SADIMM: Accelerating Sparse Attention using DIMM-based Near-memory Processing",
+    "authors": "Huize Li, Dan Chen, Tulika Mitra",
+    "venue": "IEEE Transactions on Computers",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/10755033/" }
+  },
+  {
+    "year": 2025,
+    "title": "SPLIM: Bridging the Gap Between Unstructured SpGEMM and Structured In-situ Computing",
+    "authors": "Huize Li, Dan Chen, Tulika Mitra",
+    "venue": "IEEE TCAD",
+    "links": { "paper": "https://arxiv.org/abs/2311.03826" }
+  },
+  {
+    "year": 2025,
+    "title": "HyAtten: Hybrid Photonic-digital Architecture for Accelerating Attention Mechanism",
+    "authors": "Huize Li, Dan Chen, Tulika Mitra",
+    "venue": "DATE 2025",
+    "links": { "paper": "https://arxiv.org/abs/2501.11286" }
+  },
+  {
+    "year": 2025,
+    "title": "DAOP: Data-Aware Offloading and Predictive Pre-Calculation for Efficient MoE Inference",
+    "authors": "Yujie Zhang, Shivam Aggarwal, Tulika Mitra",
+    "venue": "DATE 2025",
+    "links": { "paper": "https://arxiv.org/abs/2501.10375", "github": "https://github.com/ecolab-nus/DAOP" }
+  },
+  {
+    "year": 2025,
+    "title": "Para-Pipe: Exploiting Hierarchical Operator Parallelism of ML Computational Graphs on SoCs",
+    "authors": "Yujie Zhang, Huiying Lan, Ehsan Aghapour, Zhiyuan Ning, Peng Zan, Weidong Shao, Anuj Pathania, Tulika Mitra",
+    "venue": "IEEE TCAD",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/10993487/" }
+  },
+  {
+    "year": 2025,
+    "title": "InkStream: Instantaneous GNN Inference on Dynamic Graphs via Incremental Update",
+    "authors": "Dan Wu, Zhaoying Li, Tulika Mitra",
+    "venue": "IPDPS 2025",
+    "links": { "paper": "https://arxiv.org/abs/2309.11071", "github": "https://github.com/WuDan0399/InkStream" }
+  },
+  {
+    "year": 2025,
+    "title": "Efficient Text-to-Image Generation: An Adaptive Step Schedule Controller for Diffusion Models",
+    "authors": "Kuluhan Binici, Cihan Acar, Shivam Aggarwal, Siying Liu, Tulika Mitra",
+    "venue": "ICIP 2025",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/11084691/" }
+  },
+  {
+    "year": 2024,
+    "title": "ICED: An Integrated CGRA Framework Enabling DVFS-Aware Acceleration",
+    "authors": "Cheng Tan, Miaomiao Jiang, Deepak Patil, Yanghui Ou, Zhaoying Li, Lei Ju, Tulika Mitra, Hyunchul Park, Antonino Tumeo, Jeff Zhang",
+    "venue": "MICRO 2024",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/10764442/" }
+  },
+  {
+    "year": 2024,
+    "title": "ZeD: A Generalized Accelerator for Variably Sparse Matrix Computations in ML",
+    "authors": "Pranav Dangi, Zhenyu Bai, Rohan Juneja, Dhananjaya Wijerathne, Tulika Mitra",
+    "venue": "PACT 2024",
+    "links": { "paper": "https://doi.org/10.1145/3656019.3689905" }
+  },
+  {
+    "year": 2024,
+    "title": "SWAT: Scalable and Efficient Window Attention-based Transformers Acceleration on FPGAs",
+    "authors": "Zhenyu Bai, Pranav Dangi, Huize Li, Tulika Mitra",
+    "venue": "DAC 2024",
+    "links": { "paper": "https://arxiv.org/abs/2405.17025" }
+  },
+  {
+    "year": 2024,
+    "title": "ASADI: Accelerating Sparse Attention using Diagonal-based In-situ Computing",
+    "authors": "Huize Li, Zhaoying Li, Zhenyu Bai, Tulika Mitra",
+    "venue": "HPCA 2024",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/10476432/" }
+  },
+  {
+    "year": 2024,
+    "title": "Sustainable Hardware Specialization",
+    "authors": "Pranav Dangi, Thilini Kaushalya Bandara, Saeideh Sheikhpour, Tulika Mitra, Lieven Eeckhout",
+    "venue": "ICCAD 2024",
+    "links": { "paper": "https://arxiv.org/abs/2411.09315" }
+  },
+  {
+    "year": 2024,
+    "title": "PACE: A Scalable and Energy Efficient CGRA in a RISC-V SoC for Edge Computing Applications",
+    "authors": "Vishnu Nambiar, Yi Sheng Chong, Thilini Bandara, Dhananjaya Wijerathne, Zhaoying Li, Rohan Juneja, Li-Shiuan Peh, Tulika Mitra, Anh Tuan Do",
+    "venue": "Hot Chips 2024",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/10665106/" }
+  },
+  {
+    "year": 2024,
+    "title": "Flip: Data-Centric Edge CGRA Accelerator",
+    "authors": "Dan Wu, Peng Chen, Thilini Kaushalya Bandara, Zhaoying Li, Tulika Mitra",
+    "venue": "ACM TODAES",
+    "links": { "paper": "https://arxiv.org/abs/2309.10623" }
+  },
+  {
+    "year": 2024,
+    "title": "Shedding the Bits: Pushing the Boundaries of Quantization with Minifloats on FPGAs",
+    "authors": "Shivam Aggarwal, Hans Jakob Damsgaard, Alessandro Pappalardo, Giuseppe Franco, Thomas B. Preußer, Michaela Blott, Tulika Mitra",
+    "venue": "FPL 2024",
+    "links": { "paper": "https://arxiv.org/abs/2311.12359" }
+  },
+  {
+    "year": 2024,
+    "title": "CRISP: Hybrid Structured Sparsity for Class-aware Model Pruning",
+    "authors": "Shivam Aggarwal, Kuluhan Binici, Tulika Mitra",
+    "venue": "DATE 2024",
+    "links": { "paper": "https://arxiv.org/abs/2311.14272" }
+  },
+  {
+    "year": 2024,
+    "title": "Chameleon: Dual Memory Replay for Online Continual Learning on Edge Devices",
+    "authors": "Shivam Aggarwal, Kuluhan Binici, Tulika Mitra",
+    "venue": "IEEE TCAD",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/10375748/", "github": "https://github.com/ecolab-nus/Chameleon" }
+  },
+  {
+    "year": 2024,
+    "title": "Generalizing Teacher Networks for Effective Knowledge Distillation Across Student Architectures",
+    "authors": "Kuluhan Binici, Weiming Wu, Tulika Mitra",
+    "venue": "BMVC 2024",
+    "links": { "paper": "https://arxiv.org/abs/2407.16040" }
+  },
+  {
+    "year": 2023,
+    "title": "FLEX: Introducing FLEXible Execution on CGRA with Spatio-Temporal Vector Dataflow",
+    "authors": "Thilini Kaushalya Bandara, Dan Wu, Rohan Juneja, Dhananjaya Wijerathne, Tulika Mitra, Li-Shiuan Peh",
+    "venue": "ICCAD 2023",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/10323612/", "github": "https://github.com/ecolab-nus/FLEX" }
+  },
+  {
+    "year": 2023,
+    "title": "Dual Memory Replay for Online Continual Learning on Edge Devices",
+    "authors": "Shivam Aggarwal, Kuluhan Binici, Tulika Mitra",
+    "venue": "DATE 2023",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/10137046/", "github": "https://github.com/ecolab-nus/Chameleon" }
+  },
+  {
+    "year": 2023,
+    "title": "Accelerating Edge AI with Morpher: An Integrated Design, Compilation and Simulation Framework for CGRAs",
+    "authors": "Dhananjaya Wijerathne, Zhaoying Li, Tulika Mitra",
+    "venue": "CODAI-ESWEEK 2023",
+    "links": { "paper": "https://arxiv.org/abs/2309.06127", "github": "https://github.com/ecolab-nus/morpher-v2" }
+  },
+  {
+    "year": 2023,
+    "title": "Coarse-Grained Reconfigurable Array (CGRA)",
+    "authors": "Zhaoying Li, Dhananjaya Wijerathne, Tulika Mitra",
+    "venue": "Handbook of Computer Architecture (Book Chapter)"
+  },
+  {
+    "year": 2023,
+    "title": "Pipelined CNN Inference on Heterogeneous Multi-Processor System-on-Chip",
+    "authors": "Ehsan Aghapour, Yujie Zhang, Anuj Pathania, Tulika Mitra",
+    "venue": "Embedded ML for Cyber Physical, IoT, and Edge Computing (Book Chapter)"
+  },
+  {
+    "year": 2022,
+    "title": "Morpher: An Open-Source Integrated Compilation and Simulation Framework for CGRA",
+    "authors": "Dhananjaya Wijerathne, Zhaoying Li, Manupa Karunaratne, Li-Shiuan Peh, Tulika Mitra",
+    "venue": "WOSET-ICCAD 2022",
+    "links": { "paper": "https://arxiv.org/abs/2309.06127", "github": "https://github.com/ecolab-nus/morpher" }
+  },
+  {
+    "year": 2022,
+    "title": "Power-Performance Characterization of TinyML Systems",
+    "authors": "Yujie Zhang, Dhananjaya Wijerathne, Zhaoying Li, Tulika Mitra",
+    "venue": "ICCD 2022",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/9978484/" }
+  },
+  {
+    "year": 2022,
+    "title": "PANORAMA: Divide-and-Conquer Approach for Mapping Complex Loop Kernels on CGRA",
+    "authors": "Dhananjaya Wijerathne, Zhaoying Li, Thilini Kaushalya Bandara, Tulika Mitra",
+    "venue": "DAC 2022",
+    "links": { "github": "https://github.com/ecolab-nus/PANORAMA" }
+  },
+  {
+    "year": 2022,
+    "title": "LISA: Graph Neural Network based Portable Mapping on Spatial Accelerators",
+    "authors": "Zhaoying Li, Dan Wu, Dhananjaya Wijerathne, Tulika Mitra",
+    "venue": "HPCA 2022",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/9773209/", "github": "https://github.com/ecolab-nus/LISA" }
+  },
+  {
+    "year": 2022,
+    "title": "REVAMP: A Systematic Framework for Heterogeneous CGRA Realization",
+    "authors": "Thilini Kaushalya Bandara, Dhananjaya Wijerathne, Tulika Mitra, Li-Shiuan Peh",
+    "venue": "ASPLOS 2022",
+    "links": { "paper": "https://doi.org/10.1145/3503222.3507772" }
+  },
+  {
+    "year": 2022,
+    "title": "HiMap: Fast and Scalable High-Quality Mapping on CGRA via Hierarchical Abstraction",
+    "authors": "Dhananjaya Wijerathne, Zhaoying Li, Anuj Pathania, Tulika Mitra, Lothar Thiele",
+    "venue": "IEEE TCAD",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/9634113/" }
+  },
+  {
+    "year": 2022,
+    "title": "ChordMap: Automated Mapping of Streaming Applications onto CGRA",
+    "authors": "Zhaoying Li, Dhananjaya Wijerathne, Xianzhang Chen, Anuj Pathania, Tulika Mitra",
+    "venue": "IEEE TCAD",
+    "links": { "paper": "https://ieeexplore.ieee.org/document/9351547/" }
+  },
+  {
+    "year": 2022,
+    "title": "Robust and Resource-Efficient Data-Free Knowledge Distillation by Generative Pseudo Replay",
+    "authors": "Kuluhan Binici, Shivam Aggarwal, Nam Trung Pham, Karianto Leman, Tulika Mitra",
+    "venue": "AAAI 2022",
+    "links": { "paper": "https://arxiv.org/abs/2201.03019", "github": "https://github.com/kuluhan/PRE-DFKD" }
+  },
+  {
+    "year": 2022,
+    "title": "Preventing Catastrophic Forgetting and Distribution Mismatch in Knowledge Distillation via Synthetic Data",
+    "authors": "Kuluhan Binici, Nam Trung Pham, Tulika Mitra",
+    "venue": "WACV 2022",
+    "links": { "paper": "https://arxiv.org/abs/2108.05698" }
+  },
+  {
+    "year": 2022,
+    "title": "Load Balancing for a User-Level Virtualized 5G Cloud-RAN",
+    "authors": "Nishant Budhdev, Arka Maity, Mun Choon Chan, Tulika Mitra",
+    "venue": "MobiArch 2022"
+  },
+  {
+    "year": 2021,
+    "title": "FSA: Fronthaul Slicing Architecture for 5G using dataplane programmable switches",
+    "authors": "Nishant Budhdev, Raj Joshi, Pravein Govindan Kannan, Mun Choon Chan, Tulika Mitra",
+    "venue": "MobiCom 2021"
+  },
+  {
+    "year": 2021,
+    "title": "oo7: Low-overhead Defense against Spectre Attacks via Binary Analysis",
+    "authors": "Guanhua Wang, Sudipta Chattopadhyay, Ivan Gotovchits, Tulika Mitra, Abhik Roychoudhury",
+    "venue": "IEEE TSE",
+    "links": { "paper": "https://arxiv.org/abs/1807.05843" }
+  },
+  {
+    "year": 2021,
+    "title": "Neural Network-based Performance Prediction for Task Migration on S-NUCA Many-Cores",
+    "authors": "Martin Rapp, Anuj Pathania, Tulika Mitra, Jörg Henkel",
+    "venue": "IEEE Transactions on Computers"
+  },
+  {
+    "year": 2021,
+    "title": "Power-Efficient Heterogeneous Many-Core Design with NCFET Technology",
+    "authors": "Sami Salamin, Martin Rapp, Anuj Pathania, Arka Maity, Jörg Henkel, Tulika Mitra, Hussam Amrouch",
+    "venue": "IEEE Transactions on Computers"
+  },
+  {
+    "year": 2020,
+    "title": "Neural Network Inference on Mobile SoCs",
+    "authors": "Siqi Wang, Anuj Pathania, Tulika Mitra",
+    "venue": "IEEE Design & Test",
+    "links": { "paper": "https://arxiv.org/abs/1908.11450" }
+  },
+  {
+    "year": 2020,
+    "title": "High-Throughput CNN Inference on Embedded ARM big.LITTLE Multi-Core Processors",
+    "authors": "Siqi Wang, Gayathri Ananthanarayanan, Yifan Zeng, Neeraj Goel, Anuj Pathania, Tulika Mitra",
+    "venue": "IEEE TCAD",
+    "links": { "paper": "https://arxiv.org/abs/1903.05898" }
+  },
+  {
+    "year": 2020,
+    "title": "IsoRAN: Isolation and Scaling for 5G RAN via User-Level Data Plane Virtualization",
+    "authors": "Nishant Budhdev, Mun Choon Chan, Tulika Mitra",
+    "venue": "IFIP Networking 2020",
+    "links": { "paper": "https://arxiv.org/abs/2003.01841" }
+  },
+  {
+    "year": 2020,
+    "title": "SPECTRUM: A Software Defined Predictable Many-core Architecture for LTE/5G Baseband Processing",
+    "authors": "Vanchinathan Venkataramani, Aditi Kulkarni, Tulika Mitra, Li-Shiuan Peh",
+    "venue": "ACM TECS"
+  },
+  {
+    "year": 2020,
+    "title": "KLEESPECTRE: Detecting Information Leakage through Speculative Cache Attacks via Symbolic Execution",
+    "authors": "Guanhua Wang, Sudipta Chattopadhyay, Arnab Kumar Biswas, Tulika Mitra, Abhik Roychoudhury",
+    "venue": "ACM TOSEM",
+    "links": { "paper": "https://arxiv.org/abs/1909.00647" }
+  },
+  {
+    "year": 2020,
+    "title": "BrezeFlow: Unified Debugger for Android CPU Power Governors and Schedulers on Edge Devices",
+    "authors": "Alexander Hoffman, Anuj Pathania, Philipp H. Kindt, Samarjit Chakraborty, Tulika Mitra",
+    "venue": "DAC 2020"
+  },
+  {
+    "year": 2019,
+    "title": "CASCADE: High Throughput Data Streaming via Decoupled Access/Execute CGRA",
+    "authors": "Dhananjaya Wijerathne, Zhaoying Li, Manupa Karunaratne, Anuj Pathania, Tulika Mitra",
+    "venue": "ACM TECS"
+  },
+  {
+    "year": 2019,
+    "title": "4D-CGRA: Introducing the branch dimension to spatio-temporal application mapping of CGRAs",
+    "authors": "Manupa Karunaratne, Dhananjaya Wijerathne, Tulika Mitra, Li-Shiuan Peh",
+    "venue": "ICCAD 2019"
+  },
+  {
+    "year": 2019,
+    "title": "Time-Predictable Computing by Design: Looking Back, Looking Forward",
+    "authors": "Tulika Mitra",
+    "venue": "DAC 2019"
+  },
+  {
+    "year": 2019,
+    "title": "Synergy: A HW/SW Framework for High Throughput CNNs on Embedded Heterogeneous SoC",
+    "authors": "Guanwen Zhong, Akshat Dubey, Cheng Tan, Tulika Mitra",
+    "venue": "ACM TECS",
+    "links": { "paper": "https://arxiv.org/abs/1804.00706" }
+  },
+  {
+    "year": 2019,
+    "title": "OPTiC: Optimizing Collaborative CPU-GPU Computing on Mobile Devices with Thermal Constraints",
+    "authors": "Siqi Wang, Gayathri Ananthanarayanan, Tulika Mitra",
+    "venue": "IEEE TCAD"
+  },
+  {
+    "year": 2018,
+    "title": "Stitch: Fusible Heterogeneous Accelerators Enmeshed with Many-Core Architecture for Wearables",
+    "authors": "Cheng Tan, Manupa Karunaratne, Tulika Mitra, Li-Shiuan Peh",
+    "venue": "ISCA 2018"
+  },
+  {
+    "year": 2018,
+    "title": "DNestMap: Mapping Deeply-Nested Loops on Ultra-Low Power CGRAs",
+    "authors": "Manupa Karunaratne, Cheng Tan, Aditi Kulkarni, Tulika Mitra, Li-Shiuan Peh",
+    "venue": "DAC 2018"
+  },
+  {
+    "year": 2018,
+    "title": "Time-Critical Systems Design: A Survey",
+    "authors": "Tulika Mitra, Jürgen Teich, Lothar Thiele",
+    "venue": "IEEE Design & Test"
+  },
+  {
+    "year": 2018,
+    "title": "LOCUS: Low-Power Customizable Many-Core Architecture for Wearables",
+    "authors": "Cheng Tan, Aditi Kulkarni, Vanchinathan Venkataramani, Manupa Karunaratne, Tulika Mitra, Li-Shiuan Peh",
+    "venue": "ACM TECS"
+  },
+  {
+    "year": 2018,
+    "title": "PR3: Power Efficient and Low Latency Baseband Processing for LTE Femtocells",
+    "authors": "Nishant Budhdev, Mun Choon Chan, Tulika Mitra",
+    "venue": "INFOCOM 2018"
+  }
+]

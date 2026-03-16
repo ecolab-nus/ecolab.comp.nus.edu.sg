@@ -1,0 +1,27 @@
+[
+  {
+    "date": "2026-03",
+    "text": "Paper accepted at <strong>ASPLOS 2026</strong>: \"A Data-Driven Dynamic Execution Orchestration Architecture\"",
+    "link": "https://arxiv.org/abs/2602.17119"
+  },
+  {
+    "date": "2026-01",
+    "text": "Paper accepted at <strong>IEEE Transactions on Computers</strong>: \"HighP: In-memory Acceleration of SpGEMM with High Bank-level Parallelism\"",
+    "link": "https://ieeexplore.ieee.org/document/11216138/"
+  },
+  {
+    "date": "2025-11",
+    "text": "Paper accepted at <strong>MICRO 2025</strong>: \"Nexus machine: An active message inspired reconfigurable architecture for irregular workloads\"",
+    "link": "https://arxiv.org/abs/2502.12380"
+  },
+  {
+    "date": "2025-10",
+    "text": "Paper accepted at <strong>ICCAD 2025</strong>: \"Building an Open CGRA Ecosystem for Agile Innovation\"",
+    "link": "https://arxiv.org/abs/2508.19090"
+  },
+  {
+    "date": "2025-03",
+    "text": "Paper accepted at <strong>ASPLOS 2025</strong>: \"Enhancing CGRA Efficiency Through Aligned Compute and Communication Provisioning\"",
+    "link": "https://arxiv.org/abs/2412.08137"
+  }
+]
