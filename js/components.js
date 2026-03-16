@@ -59,22 +59,33 @@ function renderFooter() {
     const footer = document.createElement('footer');
     footer.className = 'site-footer';
     footer.innerHTML = `
-        <div class="footer-inner">
-            <div class="footer-address">
-                <strong>ECO Lab — Embedded Computing Lab</strong><br>
-                Department of Computer Science, School of Computing<br>
-                National University of Singapore<br>
-                Computing 3, 13 Computing Drive, Singapore 117417
+        <div class="footer-inner footer-flex">
+            <div class="footer-left">
+                <div class="footer-address">
+                    <strong>ECO Lab — Embedded Computing Lab</strong><br>
+                    Department of Computer Science, School of Computing<br>
+                    National University of Singapore<br>
+                    Computing 3, 13 Computing Drive, Singapore 117417
+                </div>
+                <div style="margin-top:12px; font-size:13px; color:#5f6368;">
+                    Email: <a href="mailto:tulika@comp.nus.edu.sg">tulika@comp.nus.edu.sg</a>
+                </div>
+                <div class="footer-copy">
+                    &copy; ${new Date().getFullYear()} ECO Lab, National University of Singapore. All rights reserved.
+                </div>
             </div>
-            <div style="margin-top:12px; font-size:13px; color:#5f6368;">
-                Email: <a href="mailto:tulika@comp.nus.edu.sg">tulika@comp.nus.edu.sg</a>
-            </div>
-            <div class="footer-copy">
-                &copy; ${new Date().getFullYear()} ECO Lab, National University of Singapore. All rights reserved.
-            </div>
+            <div class="footer-globe" id="footer-globe"></div>
         </div>
     `;
     document.body.appendChild(footer);
+
+    // Load ClustrMaps map into footer
+    const globeContainer = document.getElementById('footer-globe');
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.id = 'clustrmaps';
+    script.src = '//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=ZUZbXvt_mKZZUh_-M7O0zWUvq5xlOSpxra897SVDEyQ&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff';
+    globeContainer.appendChild(script);
 }
 
 // Auto-init

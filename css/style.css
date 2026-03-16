@@ -495,7 +495,6 @@ blockquote cite {
     background: #f8f9fa;
     border-top: 1px solid #e0e0e0;
     padding: 32px 24px;
-    text-align: center;
     color: #5f6368;
     font-size: 13px;
     margin-top: 60px;
@@ -504,6 +503,17 @@ blockquote cite {
 .site-footer .footer-inner {
     max-width: 1100px;
     margin: 0 auto;
+}
+
+.site-footer .footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.site-footer .footer-left {
+    text-align: left;
 }
 
 .site-footer .footer-address {
@@ -519,6 +529,24 @@ blockquote cite {
     margin-top: 16px;
     font-size: 12px;
     color: #9aa0a6;
+}
+
+.site-footer .footer-globe {
+    flex-shrink: 0;
+    width: 300px;
+}
+
+@media (max-width: 600px) {
+    .site-footer .footer-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .site-footer .footer-left {
+        text-align: center;
+    }
+    .site-footer .footer-globe {
+        margin-top: 16px;
+    }
 }
 
 /* ============================================
@@ -658,4 +686,34 @@ blockquote cite {
 }
 .pub-link:hover {
     text-decoration: underline;
+}
+
+/* Publication Search */
+.pub-search-wrap {
+    position: relative;
+    margin-bottom: 24px;
+}
+.pub-search {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-family: inherit;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: #fff;
+}
+.pub-search:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.12);
+}
+.pub-search::placeholder {
+    color: #9aa0a6;
+}
+.pub-search-count {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #5f6368;
 }
