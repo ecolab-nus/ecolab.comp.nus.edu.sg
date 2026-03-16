@@ -649,16 +649,13 @@ blockquote cite {
     color: #fff;
     border-color: #1a73e8;
 }
-.pub-links {
-    margin-top: 4px;
-    font-size: 13px;
-}
-.pub-links a {
+.pub-link {
     color: #1a73e8;
     text-decoration: none;
-    margin-right: 12px;
+    font-size: 13px;
     font-weight: 500;
+    margin-left: 4px;
 }
-.pub-links a:hover {
+.pub-link:hover {
     text-decoration: underline;
 }

@@ -25,13 +25,7 @@ function renderNav(activePage) {
                 <li><a href="featured-projects.html" ${activePage === 'featured-projects' ? 'class="active"' : ''}>Projects</a></li>
                 <li><a href="publications.html" ${activePage === 'publications' ? 'class="active"' : ''}>Publications</a></li>
                 <li><a href="artifacts.html" ${activePage === 'artifacts' ? 'class="active"' : ''}>Artifacts</a></li>
-                <li>
-                    <a href="activities.html" ${activePage === 'activities' || activePage === 'acknowledgements' ? 'class="active"' : ''}>More ▾</a>
-                    <ul class="nav-dropdown">
-                        <li><a href="activities.html">Professional Activities</a></li>
-                        <li><a href="acknowledgements.html">Acknowledgements</a></li>
-                    </ul>
-                </li>
+                <li><a href="acknowledgements.html" ${activePage === 'acknowledgements' ? 'class="active"' : ''}>Acknowledgements</a></li>
             </ul>
         </div>
     `;

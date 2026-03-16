@@ -41,20 +41,17 @@ function renderPublications(containerId, options = {}) {
 
                     const li = document.createElement('li');
 
-                    let html = `<span class="pub-title">${pub.title}</span><br>`;
-                    html += `<span class="pub-authors">${pub.authors}</span><br>`;
-                    html += `<span class="pub-venue">${pub.venue}</span>`;
-
+                    let html = `<span class="pub-title">${pub.title}</span>`;
                     if (pub.links) {
-                        html += '<div class="pub-links">';
                         if (pub.links.paper) {
-                            html += `<a href="${pub.links.paper}" target="_blank">[Paper]</a>`;
+                            html += ` <a class="pub-link" href="${pub.links.paper}" target="_blank">[Paper]</a>`;
                         }
                         if (pub.links.github) {
-                            html += `<a href="${pub.links.github}" target="_blank">[GitHub]</a>`;
+                            html += ` <a class="pub-link" href="${pub.links.github}" target="_blank">[GitHub]</a>`;
                         }
-                        html += '</div>';
                     }
+                    html += `<br><span class="pub-authors">${pub.authors}</span><br>`;
+                    html += `<span class="pub-venue">${pub.venue}</span>`;
 
                     li.innerHTML = html;
                     ul.appendChild(li);
