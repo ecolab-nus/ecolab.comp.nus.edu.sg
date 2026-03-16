@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Projects - ECO Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Category Filters */
+        .category-filters {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        .category-btn {
+            padding: 8px 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 24px;
+            background: #fff;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: inherit;
+            transition: all 0.2s;
+        }
+        .category-btn:hover {
+            border-color: #1a73e8;
+            color: #1a73e8;
+        }
+        .category-btn.active {
+            background: #1a73e8;
+            color: #fff;
+            border-color: #1a73e8;
+        }
+
+        /* Category Header */
+        .cat-header {
+            margin: 48px 0 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #1a73e8;
+        }
+        .cat-header h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: #212121;
+            margin-bottom: 8px;
+        }
+        .cat-header p {
+            font-size: 14px;
+            color: #5f6368;
+            line-height: 1.6;
+        }
+
+        /* Research Card */
+        .research-card {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #e8eaed;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 32px;
+            transition: box-shadow 0.3s;
+        }
+        .research-card:hover {
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+        .research-card.alt-bg {
+            background: #f8f9fa;
+        }
+
+        /* Image area */
+        .research-img {
+            width: 100%;
+            background: #f1f3f4;
+            padding: 20px;
+            text-align: center;
+        }
+        .research-img img {
+            max-width: 100%;
+            max-height: 360px;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+        .img-caption {
+            font-size: 12px;
+            color: #5f6368;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        /* Content area */
+        .research-body {
+            padding: 24px 28px;
+        }
+        .research-body h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 4px;
+            color: #212121;
+        }
+        .research-subtitle {
+            font-size: 15px;
+            color: #1a73e8;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        .research-body p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #3c4043;
+            margin-bottom: 12px;
+        }
+
+        /* PDF button */
+        .pub-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border: 1px solid #1a73e8;
+            border-radius: 6px;
+            color: #1a73e8;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+            margin-top: 8px;
+        }
+        .pub-btn:hover {
+            background: #1a73e8;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Two-image layout (HiMap) */
+        .dual-img {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .dual-img-item {
+            text-align: center;
+        }
+        .dual-img-item img {
+            max-height: 280px;
+        }
+        .dual-img-item .img-caption {
+            margin-top: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .dual-img {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body data-page="featured-projects">
+
+    <div class="page-container">
+
+        <h1 style="font-family: 'Roboto', sans-serif; font-weight: 400; margin-bottom: 8px;">Featured Projects</h1>
+        <p style="color: #5f6368; margin-bottom: 24px;">Select a category to explore our work</p>
+
+        <div class="category-filters">
+            <button class="category-btn active" data-category="all">All Projects</button>
+            <button class="category-btn" data-category="compiler">CGRA Compiler</button>
+            <button class="category-btn" data-category="arch">CGRA Architecture</button>
+            <button class="category-btn" data-category="sparse">Sparse AI Accelerators</button>
+        </div>
+
+        <!-- ==================== CGRA Compiler ==================== -->
+        <div class="cat-header" data-cat-header="compiler">
+            <h2>CGRA Compiler</h2>
+            <p>Since 2019, we have built a full end-to-end compiler stack for CGRAs — from front ends that take standard programs, to mapping, scheduling, placement, routing, and code generation. As our architecture research moves toward more general reconfigurable dataflow systems for AI, we are building AI-focused compilers that lower neural-network graphs to these targets.</p>
+        </div>
+
+        <!-- PANORAMA -->
+        <div class="research-card" data-category="compiler">
+            <div class="research-img">
+                <img src="static/publications/Panorama.png" alt="PANORAMA Compiler" loading="lazy">
+                <p class="img-caption">Cluster mapping with imbalanced clusters</p>
+            </div>
+            <div class="research-body">
+                <h3>PANORAMA</h3>
+                <div class="research-subtitle">Divide-and-Conquer CGRA Compiler</div>
+                <p>PANORAMA introduces a divide-and-conquer approach, combining global dataflow clustering with hierarchical mapping to manage large and irregular dataflow graphs effectively. By providing a panoramic, global view of application dataflows, the compiler achieves up to 2.6× higher throughput and 8.7× faster compilation compared to state-of-the-art CGRA mappers.</p>
+                <p>PANORAMA's modular design allows seamless integration with existing low-level mapping tools, making it a portable solution for accelerating complex workloads on large CGRAs.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/DAC22.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- HiMap -->
+        <div class="research-card alt-bg" data-category="compiler">
+            <div class="research-img">
+                <div class="dual-img">
+                    <div class="dual-img-item">
+                        <img src="static/publications/himap_1.png" alt="HiMap GEMM DFG" loading="lazy">
+                        <p class="img-caption">GEMM DFG (b = 2)</p>
+                    </div>
+                    <div class="dual-img-item">
+                        <img src="static/publications/himap_2.png" alt="HiMap Systolic Mapping" loading="lazy">
+                        <p class="img-caption">Systolic Mapping</p>
+                    </div>
+                </div>
+            </div>
+            <div class="research-body">
+                <h3>HiMap</h3>
+                <div class="research-subtitle">Hierarchical Systolic-Aware CGRA Mapping</div>
+                <p>HiMap employs a hierarchical abstraction that leverages the regularity of multi-dimensional computations through a Virtual Systolic Array (VSA). This two-level mapping enables near-optimal performance and energy efficiency even on large CGRAs.</p>
+                <p>HiMap achieves up to 17.3× performance and 5× energy efficiency improvements over state-of-the-art methods, while reducing compilation time from days to under 15 minutes for 64×64 CGRAs.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/HiMap-TCAD.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- LISA -->
+        <div class="research-card" data-category="compiler">
+            <div class="research-img">
+                <img src="static/publications/LISA.png" alt="LISA Framework" loading="lazy">
+                <p class="img-caption">Overview of GNN-based portable mapping framework — LISA</p>
+            </div>
+            <div class="research-body">
+                <h3>LISA</h3>
+                <div class="research-subtitle">GNN-Based Portable Compiler for Spatial Accelerators</div>
+                <p>LISA leverages Graph Neural Networks to enable portable, high-quality mapping across diverse spatial accelerators such as CGRAs and systolic arrays. Unlike traditional handcrafted compilers, LISA automatically learns the relationship between an application's dataflow graph structure and an accelerator's architectural characteristics.</p>
+                <p>LISA significantly outperforms state-of-the-art compilers in mapping quality, compilation time, and portability, marking the first successful use of GNNs for spatial accelerator compilation.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/HPCA_LISA_2022.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- ==================== CGRA Architecture ==================== -->
+        <div class="cat-header" data-cat-header="arch">
+            <h2>CGRA Architecture</h2>
+            <p>We design novel CGRA architectures that rethink programmable fabrics for energy-efficient, high-performance computing at the edge. Our architectures feature custom interconnects, flexible execution models, and heterogeneous design exploration.</p>
+        </div>
+
+        <!-- Plaid -->
+        <div class="research-card alt-bg" data-category="arch">
+            <div class="research-img">
+                <img src="static/publications/plaid.png" alt="Plaid Architecture" loading="lazy">
+                <p class="img-caption">Overview of Plaid co-designed architecture and compiler</p>
+            </div>
+            <div class="research-body">
+                <h3>Plaid</h3>
+                <div class="research-subtitle">Aligned Compute & Communication CGRA</div>
+                <p>Plaid identifies and exploits recurring dataflow motifs within applications to enable collective execution and routing, significantly improving hardware utilization. By integrating a hierarchical on-chip network and motif-aware compiler, Plaid achieves a 43% power reduction and 46% area savings compared to high-performance spatio-temporal CGRAs.</p>
+                <a href="https://dl.acm.org/doi/10.1145/3669940.3707230" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- FLEX -->
+        <div class="research-card" data-category="arch">
+            <div class="research-img">
+                <img src="static/publications/flex.png" alt="Flex Architecture" loading="lazy">
+                <p class="img-caption">FLEX execution model spans spatio-temporal, spatial and spatio-temporal vector dataflow</p>
+            </div>
+            <div class="research-body">
+                <h3>FLEX</h3>
+                <div class="research-subtitle">Flexible Spatio-Temporal Vector Dataflow CGRA</div>
+                <p>FLEX introduces a flexible spatio-temporal vector dataflow execution model, unifying the efficiency of spatial execution with the performance of spatio-temporal designs. FLEX achieves the same performance as spatio-temporal CGRAs while consuming 45% less energy and offering 1.9× higher power efficiency.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/FLEX_ICCAD.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- REVAMP -->
+        <div class="research-card alt-bg" data-category="arch">
+            <div class="research-img">
+                <img src="static/publications/revamp.png" alt="REVAMP Framework" loading="lazy">
+                <p class="img-caption">Derived Heterogeneous Architectures</p>
+            </div>
+            <div class="research-body">
+                <h3>REVAMP</h3>
+                <div class="research-subtitle">Design-Space Exploration for Heterogeneous CGRAs</div>
+                <p>REVAMP is a systematic design-space exploration framework that enables architects to automatically introduce and optimize heterogeneity in traditionally homogeneous CGRAs. Demonstrated on three state-of-the-art CGRAs, REVAMP achieves up to 52.4% power, 38.1% area, and 36% average energy reduction with minimal performance loss.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/asplos22.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- HyCUBE -->
+        <div class="research-card" data-category="arch">
+            <div class="research-img">
+                <img src="static/publications/hycube.png" alt="HyCUBE Architecture" loading="lazy">
+                <p class="img-caption">(a) HyCUBE chip layout (b) Power-Performance comparison</p>
+            </div>
+            <div class="research-body">
+                <h3>HyCUBE</h3>
+                <div class="research-subtitle">CGRA with Reconfigurable Multi-Hop Interconnect</div>
+                <p>HyCUBE enables single-cycle, multi-hop communication between distant functional units through a reconfigurable interconnect, allowing efficient data movement without occupying compute resources. HyCUBE delivers up to 3× performance-per-watt improvement over conventional CGRAs.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/DAC17.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- CASCADE -->
+        <div class="research-card alt-bg" data-category="arch">
+            <div class="research-img">
+                <img src="static/publications/cascade.jpg" alt="CASCADE Architecture" loading="lazy">
+                <p class="img-caption">Data transfer from multi-bank memory via SE to CGRA</p>
+            </div>
+            <div class="research-body">
+                <h3>CASCADE</h3>
+                <div class="research-subtitle">Decoupled Access-Execute CGRA</div>
+                <p>CASCADE overcomes the data access bottleneck by fully decoupling memory access from computation. It introduces a Stream Engine for programmable multi-bank memory address generation and an automated compiler ensuring conflict-free data streaming. CASCADE delivers up to 3× performance and 2.2× performance-per-watt improvements over iso-area conventional CGRAs.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/TECS-CASCADE19.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- ==================== Sparse AI Accelerators ==================== -->
+        <div class="cat-header" data-cat-header="sparse">
+            <h2>Sparse AI Accelerators</h2>
+        </div>
+
+        <!-- Canon -->
+        <div class="research-card" data-category="sparse">
+            <div class="research-img">
+                <img src="static/publications/canon.png" alt="Canon 3D Architecture" loading="lazy">
+                <p class="img-caption">3D Axis Comparison</p>
+            </div>
+            <div class="research-body">
+                <h3>Canon</h3>
+                <div class="research-subtitle">Data-Driven Parallel Architecture</div>
+                <p>Canon bridges the gap between highly specialized and fully programmable architectures. It introduces dynamic execution orchestration, where programmable finite-state machines translate runtime data into control, enabling fine-grained adaptation to irregular or sparse workloads. Canon matches or exceeds domain-specific accelerators while retaining general-purpose flexibility.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/ASPLOS26.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- ZeD -->
+        <div class="research-card alt-bg" data-category="sparse">
+            <div class="research-img">
+                <img src="static/publications/zed.png" alt="ZeD Architecture" loading="lazy">
+                <p class="img-caption">Comparison of storage costs of various sparse formats</p>
+            </div>
+            <div class="research-body">
+                <h3>ZeD</h3>
+                <div class="research-subtitle">Variably Sparse Matrix Accelerator</div>
+                <p>ZeD develops techniques for efficiently handling variably sparse matrices in ML workloads. Through a hierarchical bit-tree compression format and zero-detection hardware, ZeD enables compact representation and dynamic zero skipping. ZeD demonstrates a 3.2× improvement in performance per area over state-of-the-art solutions.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/PACT24.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- SWAT -->
+        <div class="research-card" data-category="sparse">
+            <div class="research-img">
+                <img src="static/publications/swat.png" alt="SWAT Architecture" loading="lazy">
+                <p class="img-caption">Energy Efficiency of SWAT against SOTA GPU and FPGA implementations</p>
+            </div>
+            <div class="research-body">
+                <h3>SWAT</h3>
+                <div class="research-subtitle">Window Attention FPGA Accelerator</div>
+                <p>SWAT is a scalable FPGA-based accelerator for window attention-based Transformers. Through row-major dataflow, kernel fusion, and FIFO-managed buffering, SWAT achieves a 22× latency reduction and 5.7× energy efficiency improvement over baseline FPGA accelerators, and up to 15× higher energy efficiency than GPU implementations.</p>
+                <a href="https://dl.acm.org/doi/10.1145/3649329.3658488" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- SPLIM -->
+        <div class="research-card alt-bg" data-category="sparse">
+            <div class="research-img">
+                <img src="static/publications/splim.jpg" alt="SPLIM Architecture" loading="lazy">
+                <p class="img-caption">SPLIM: Bridging Unstructured SpGEMM and Structured In-Situ Computing</p>
+            </div>
+            <div class="research-body">
+                <h3>SPLIM</h3>
+                <div class="research-subtitle">Processing-Using-Memory Accelerator for SpGEMM</div>
+                <p>SPLIM introduces the ELLPACK-based computation paradigm (ECP) for in-situ structured vector multiplication with higher hardware utilization. Compared with state-of-the-art GPU, ASIC, and PUM-based SpGEMM accelerators, SPLIM achieves 276×, 11.2×, and 3.9× performance improvement, respectively.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/SPLIM_TCAD.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- SADIMM -->
+        <div class="research-card" data-category="sparse">
+            <div class="research-img">
+                <img src="static/publications/sadimm.jpg" alt="SADIMM Architecture" loading="lazy">
+                <p class="img-caption">SADIMM: DIMM-Based Near-Memory Processing for Sparse Attention</p>
+            </div>
+            <div class="research-body">
+                <h3>SADIMM</h3>
+                <div class="research-subtitle">DIMM-Based Near-Memory Processing for Sparse Attention</div>
+                <p>SADIMM employs heterogeneous NMP architectures by integrating distinct logic units across different hierarchies of DIMM. With a dimension-based dataflow partitioning, it efficiently supports sparse attention with balanced loads and remarkable performance and energy efficiency.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/TC25.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- ASADI -->
+        <div class="research-card alt-bg" data-category="sparse">
+            <div class="research-img">
+                <img src="static/publications/asadi.jpg" alt="ASADI Architecture" loading="lazy">
+                <p class="img-caption">ASADI: Diagonal-Based In-Situ Computing for Sparse Attention</p>
+            </div>
+            <div class="research-body">
+                <h3>ASADI</h3>
+                <div class="research-subtitle">Diagonal-Based In-Situ Computing for Sparse Attention</div>
+                <p>ASADI proposes a novel compression method for sparse attention to diagonal format and introduces DIA-based sparse matrix computation to exploit inherent diagonal locality. ASADI achieves 18.6× performance improvement and 2.9× energy savings compared to near-memory-processing baselines.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/HPCA24.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- HyAtten -->
+        <div class="research-card" data-category="sparse">
+            <div class="research-img">
+                <img src="static/publications/hyatten.jpg" alt="HyAtten Architecture" loading="lazy">
+                <p class="img-caption">HyAtten: Hybrid Photonic-Digital Architecture for Attention</p>
+            </div>
+            <div class="research-body">
+                <h3>HyAtten</h3>
+                <div class="research-subtitle">Hybrid Photonic-Digital Architecture for Attention</div>
+                <p>HyAtten is a photonic-based attention accelerator with minimal signal conversion overhead. It incorporates a signal comparator to classify signals and uses digital circuits for high-resolution signals, reducing area and latency. HyAtten achieves 9.8× improvement in performance-per-area and 2.2× increase in energy-efficiency-per-area.</p>
+                <a href="https://www.comp.nus.edu.sg/~tulika/HyAtten.pdf" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Category filter JS -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const btns = document.querySelectorAll('.category-btn');
+        const cards = document.querySelectorAll('.research-card');
+        const headers = document.querySelectorAll('.cat-header');
+
+        btns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const cat = this.dataset.category;
+                btns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                if (cat === 'all') {
+                    cards.forEach(c => c.style.display = '');
+                    headers.forEach(h => h.style.display = '');
+                } else {
+                    cards.forEach(c => {
+                        c.style.display = c.dataset.category === cat ? '' : 'none';
+                    });
+                    headers.forEach(h => {
+                        h.style.display = h.dataset.catHeader === cat ? '' : 'none';
+                    });
+                }
+            });
+        });
+    });
+    </script>
+
+    <script src="js/components.js"></script>
+</body>
+</html>

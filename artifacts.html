@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifacts - ECO Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .artifact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 16px;
+        }
+        .artifact-card {
+            border: 1px solid #e8eaed;
+            border-radius: 8px;
+            padding: 24px;
+            transition: box-shadow 0.2s;
+        }
+        .artifact-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .artifact-card h3 {
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+        .artifact-card h3 a {
+            color: #212121;
+        }
+        .artifact-card h3 a:hover {
+            color: #1a73e8;
+        }
+        .artifact-lang {
+            display: inline-block;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            background: #e8f0fe;
+            color: #174ea6;
+            margin-bottom: 8px;
+        }
+        .artifact-license {
+            display: inline-block;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            background: #e6f4ea;
+            color: #137333;
+            margin-left: 4px;
+            margin-bottom: 8px;
+        }
+        .artifact-desc {
+            font-size: 14px;
+            color: #3c4043;
+            line-height: 1.6;
+        }
+        .artifact-link {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 13px;
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .artifact-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body data-page="artifacts">
+
+    <div class="page-container content">
+
+        <h1 style="font-family: 'Roboto', sans-serif; font-weight: 400; margin-bottom: 8px;">Open-Source Artifacts</h1>
+        <p style="color: #5f6368; margin-bottom: 32px;">
+            Visit our <a href="https://github.com/ecolab-nus" target="_blank">GitHub organization</a> to explore all 22 repositories.
+        </p>
+
+        <div class="artifact-grid">
+            <div class="artifact-card">
+                <h3><a href="https://github.com/ecolab-nus/morpher-v2" target="_blank">Morpher v2</a></h3>
+                <span class="artifact-lang">Python</span>
+                <span class="artifact-license">MIT</span>
+                <p class="artifact-desc">Open-source tool for CGRA accelerators — compilation, simulation, and design space exploration.</p>
+                <a href="https://github.com/ecolab-nus/morpher-v2" target="_blank" class="artifact-link">GitHub →</a>
+            </div>
+
+            <div class="artifact-card">
+                <h3><a href="https://github.com/ecolab-nus/LISA" target="_blank">LISA</a></h3>
+                <span class="artifact-lang">Python</span>
+                <span class="artifact-license">MIT</span>
+                <p class="artifact-desc">Portable framework for DFG mapping on spatial accelerators using graph neural networks.</p>
+                <a href="https://github.com/ecolab-nus/LISA" target="_blank" class="artifact-link">GitHub →</a>
+            </div>
+
+            <div class="artifact-card">
+                <h3><a href="https://github.com/ecolab-nus/FLEX" target="_blank">FLEX</a></h3>
+                <span class="artifact-lang">C++</span>
+                <span class="artifact-license">MIT</span>
+                <p class="artifact-desc">CGRA with flexible execution paradigm supporting spatio-temporal vector dataflow.</p>
+                <a href="https://github.com/ecolab-nus/FLEX" target="_blank" class="artifact-link">GitHub →</a>
+            </div>
+
+            <div class="artifact-card">
+                <h3><a href="https://github.com/ecolab-nus/DAOP" target="_blank">DAOP</a></h3>
+                <span class="artifact-lang">Python</span>
+                <span class="artifact-license">Apache 2.0</span>
+                <p class="artifact-desc">Data-Aware Offloading and Predictive Pre-Calculation for efficient MoE inference.</p>
+                <a href="https://github.com/ecolab-nus/DAOP" target="_blank" class="artifact-link">GitHub →</a>
+            </div>
+
+            <div class="artifact-card">
+                <h3><a href="https://github.com/ecolab-nus/HyCUBE" target="_blank">HyCUBE</a></h3>
+                <span class="artifact-lang">C++</span>
+                <p class="artifact-desc">Simulator for the HyCUBE CGRA architecture with reconfigurable single-cycle multi-hop interconnect.</p>
+                <a href="https://github.com/ecolab-nus/HyCUBE" target="_blank" class="artifact-link">GitHub →</a>
+            </div>
+
+            <div class="artifact-card">
+                <h3><a href="https://github.com/ecolab-nus/PANORAMA" target="_blank">PANORAMA</a></h3>
+                <span class="artifact-lang">C++</span>
+                <p class="artifact-desc">Divide-and-conquer approach for mapping complex loop kernels on CGRA.</p>
+                <a href="https://github.com/ecolab-nus/PANORAMA" target="_blank" class="artifact-link">GitHub →</a>
+            </div>
+
+            <div class="artifact-card">
+                <h3><a href="https://github.com/ecolab-nus/morpher" target="_blank">Morpher</a></h3>
+                <span class="artifact-lang">Python</span>
+                <span class="artifact-license">MIT</span>
+                <p class="artifact-desc">Original Morpher — integrated compilation and simulation framework for CGRA.</p>
+                <a href="https://github.com/ecolab-nus/morpher" target="_blank" class="artifact-link">GitHub →</a>
+            </div>
+
+            <div class="artifact-card">
+                <h3><a href="https://github.com/ecolab-nus/Chameleon" target="_blank">Chameleon</a></h3>
+                <p class="artifact-desc">Dual memory replay for online continual learning on edge devices.</p>
+                <a href="https://github.com/ecolab-nus/Chameleon" target="_blank" class="artifact-link">GitHub →</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/components.js"></script>
+</body>
+</html>
