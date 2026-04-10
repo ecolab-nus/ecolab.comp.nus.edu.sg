@@ -27,6 +27,7 @@ function renderNav(activePage) {
                 <li><a href="featured-projects.html" ${activePage === 'featured-projects' ? 'class="active"' : ''}>Projects</a></li>
                 <li><a href="publications.html" ${activePage === 'publications' ? 'class="active"' : ''}>Publications</a></li>
                 <li><a href="artifacts.html" ${activePage === 'artifacts' ? 'class="active"' : ''}>Artifacts</a></li>
+                <li><a href="chip-gallery.html" ${activePage === 'chip-gallery' ? 'class="active"' : ''}>Chip Gallery</a></li>
                 <li><a href="acknowledgements.html" ${activePage === 'acknowledgements' ? 'class="active"' : ''}>Acknowledgements</a></li>
             </ul>
         </div>
@@ -67,16 +68,13 @@ function renderFooter() {
                     <img src="static/nus-logo.png" alt="NUS School of Computing" style="height: 36px; width: auto;">
                 </div>
                 <div class="footer-address">
-                    <strong>ECO Lab — Embedded Computing Lab</strong><br>
-                    Department of Computer Science, School of Computing<br>
-                    National University of Singapore<br>
                     Computing 3, 13 Computing Drive, Singapore 117417
                 </div>
-                <div style="margin-top:12px; font-size:13px; color:#5f6368;">
+                <div style="margin-top:8px; font-size:13px; color:#5f6368;">
                     Email: <a href="mailto:tulika@comp.nus.edu.sg">tulika@comp.nus.edu.sg</a>
                 </div>
                 <div class="footer-copy">
-                    &copy; ${new Date().getFullYear()} ECO Lab, National University of Singapore. All rights reserved.
+                    &copy; ${new Date().getFullYear()} ECO Lab, National University of Singapore.
                 </div>
             </div>
             <div class="footer-globe" id="footer-globe"></div>

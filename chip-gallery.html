@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chip Gallery - ECO Lab</title>
+    <meta name="description" content="Silicon-proven chip tapeouts from ECO Lab at NUS — custom CGRA and accelerator chips designed and fabricated by the Embedded Computing Lab.">
+    <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chip Gallery - ECO Lab">
+    <meta property="og:description" content="Silicon-proven chip tapeouts from ECO Lab at NUS — custom CGRA and accelerator chips.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ecolab.comp.nus.edu.sg/chip-gallery.html">
+    <meta property="og:image" content="https://ecolab.comp.nus.edu.sg/static/nus-com3-hero.webp">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Chip Gallery - ECO Lab">
+    <meta name="twitter:description" content="Silicon-proven chip tapeouts from ECO Lab at NUS — custom CGRA and accelerator chips.">
+    <meta name="twitter:image" content="https://ecolab.comp.nus.edu.sg/static/nus-com3-hero.webp">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .chip-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 32px;
+            margin-top: 32px;
+        }
+        .chip-card {
+            border: 1px solid #e8eaed;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        .chip-card:hover {
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+        .chip-img {
+            width: 100%;
+            aspect-ratio: 1;
+            background: #f1f3f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .chip-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .chip-info {
+            padding: 20px 24px;
+        }
+        .chip-info h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            color: #212121;
+            margin-bottom: 6px;
+        }
+        .chip-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 10px;
+        }
+        .chip-tag {
+            display: inline-block;
+            font-size: 12px;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+        .chip-tag.process {
+            background: #e8f0fe;
+            color: #174ea6;
+        }
+        .chip-tag.year {
+            background: #fce8e6;
+            color: #c5221f;
+        }
+        .chip-tag.foundry {
+            background: #e6f4ea;
+            color: #137333;
+        }
+        .chip-info p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #3c4043;
+            margin-bottom: 8px;
+        }
+        .chip-specs {
+            font-size: 13px;
+            color: #5f6368;
+            margin-top: 8px;
+        }
+        .chip-specs dt {
+            display: inline;
+            font-weight: 600;
+            color: #3c4043;
+        }
+        .chip-specs dt::after {
+            content: ': ';
+        }
+        .chip-specs dd {
+            display: inline;
+            margin: 0;
+        }
+        .chip-specs dd::after {
+            content: '';
+            display: block;
+            margin-bottom: 4px;
+        }
+        .chip-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 12px;
+            padding: 6px 14px;
+            border: 1px solid #1a73e8;
+            border-radius: 6px;
+            color: #1a73e8;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .chip-link:hover {
+            background: #1a73e8;
+            color: #fff;
+            text-decoration: none;
+        }
+        .chip-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #9aa0a6;
+            background: #f8f9fa;
+        }
+        @media (max-width: 600px) {
+            .chip-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body data-page="chip-gallery">
+
+    <div class="page-container">
+
+        <h1 style="font-family: 'Roboto', sans-serif; font-weight: 400; margin-bottom: 8px;">Chip Gallery</h1>
+        <p style="color: #5f6368; margin-bottom: 8px;">
+            Our research culminates in silicon-proven innovations through custom chip tapeouts.
+            Below is a showcase of chips designed and fabricated by ECO Lab.
+        </p>
+
+        <div class="chip-grid">
+
+            <!-- PACE Chip -->
+            <div class="chip-card">
+                <div class="chip-img">
+                    <!-- Replace with: <img src="static/chips/pace.jpg" alt="PACE Chip" loading="lazy"> -->
+                    <div class="chip-placeholder">PACE</div>
+                </div>
+                <div class="chip-info">
+                    <h3>PACE</h3>
+                    <div class="chip-meta">
+                        <span class="chip-tag process">28nm</span>
+                        <span class="chip-tag year">2024</span>
+                        <span class="chip-tag foundry">A*STAR IME</span>
+                    </div>
+                    <p>PACE integrates our HyCUBE CGRA into a full RISC-V SoC, targeting next-generation IoT edge computing. The chip features multi-hop routers and idle-state instructions for energy-efficient acceleration, achieving 360 GOPS/W. Developed in collaboration with the Institute of Microelectronics (A*STAR) and presented at Hot Chips 2024.</p>
+                    <dl class="chip-specs">
+                        <dt>Architecture</dt><dd>HyCUBE CGRA + RISC-V SoC</dd>
+                        <dt>Efficiency</dt><dd>360 GOPS/W</dd>
+                        <dt>Key Feature</dt><dd>Multi-hop routers, idle-state instructions</dd>
+                        <dt>Application</dt><dd>Edge computing, IoT</dd>
+                    </dl>
+                    <a href="https://ieeexplore.ieee.org/document/10665106/" target="_blank" class="chip-link">Hot Chips 2024</a>
+                </div>
+            </div>
+
+            <!-- HyCUBE Chip -->
+            <div class="chip-card">
+                <div class="chip-img">
+                    <!-- Replace with: <img src="static/chips/hycube.jpg" alt="HyCUBE Chip" loading="lazy"> -->
+                    <div class="chip-placeholder">HyCUBE</div>
+                </div>
+                <div class="chip-info">
+                    <h3>HyCUBE</h3>
+                    <div class="chip-meta">
+                        <span class="chip-tag process">40nm</span>
+                        <span class="chip-tag year">2019</span>
+                    </div>
+                    <p>HyCUBE is a power-efficient CGRA accelerator for IoT applications, featuring a reconfigurable single-cycle multi-hop interconnect that enables distant functional units to communicate in one clock cycle without occupying intermediate compute resources. The test chip operates at 0.9V, achieves a peak efficiency of 26.4 MOPS/mW with only 290 pJ per operation, and runs at a maximum frequency of 753 MHz with 4 hops per cycle. It delivers 28.6x and 26.5x better power efficiency compared to Xilinx Zynq FPGA and ARM Cortex-A7, respectively.</p>
+                    <dl class="chip-specs">
+                        <dt>Architecture</dt><dd>CGRA with multi-hop interconnect</dd>
+                        <dt>Voltage</dt><dd>0.9V</dd>
+                        <dt>Efficiency</dt><dd>26.4 MOPS/mW, 290 pJ/op</dd>
+                        <dt>Frequency</dt><dd>753 MHz (max), 4 hops/cycle</dd>
+                        <dt>vs. FPGA</dt><dd>28.6x better perf/watt</dd>
+                        <dt>vs. ARM</dt><dd>26.5x better perf/watt</dd>
+                    </dl>
+                    <a href="https://ieeexplore.ieee.org/document/9056954/" target="_blank" class="chip-link">A-SSCC 2019</a>
+                    <a href="https://www.comp.nus.edu.sg/~tulika/DAC17.pdf" target="_blank" class="chip-link">DAC 2017</a>
+                </div>
+            </div>
+
+            <!-- Stitch Chip -->
+            <div class="chip-card">
+                <div class="chip-img">
+                    <!-- Replace with: <img src="static/chips/stitch.jpg" alt="Stitch Chip" loading="lazy"> -->
+                    <div class="chip-placeholder">Stitch</div>
+                </div>
+                <div class="chip-info">
+                    <h3>Stitch</h3>
+                    <div class="chip-meta">
+                        <span class="chip-tag process">65nm</span>
+                        <span class="chip-tag year">2018</span>
+                    </div>
+                    <p>Stitch is a heterogeneous many-core processor for next-generation wearable devices. It features 16 cores arranged in a mesh network, where each core contains a tiny accelerator patch that can be "stitched" together virtually to form large, application-specific accelerators. This hardware-software co-design approach achieves 2x better performance while being 7.5x smaller than its predecessor LOCUS. Tested across finger gesture recognition, image classification, and indoor localization tasks. Presented at ISCA 2018.</p>
+                    <dl class="chip-specs">
+                        <dt>Architecture</dt><dd>16-core heterogeneous mesh, fusible accelerator patches</dd>
+                        <dt>vs. LOCUS</dt><dd>2x performance, 7.5x smaller area</dd>
+                        <dt>Application</dt><dd>Wearable computing, gesture recognition, image classification</dd>
+                    </dl>
+                    <a href="https://www.comp.nus.edu.sg/~tulika/ISCA18.pdf" target="_blank" class="chip-link">ISCA 2018</a>
+                </div>
+            </div>
+
+            <!-- LOCUS Chip -->
+            <div class="chip-card">
+                <div class="chip-img">
+                    <!-- Replace with: <img src="static/chips/locus.jpg" alt="LOCUS Chip" loading="lazy"> -->
+                    <div class="chip-placeholder">LOCUS</div>
+                </div>
+                <div class="chip-info">
+                    <h3>LOCUS</h3>
+                    <div class="chip-meta">
+                        <span class="chip-tag process">65nm</span>
+                        <span class="chip-tag year">2016</span>
+                    </div>
+                    <p>LOCUS (Low-Power Customizable Many-Core Architecture) is a 16-core message-passing processor designed for ultra-low-power wearable devices. Each tile combines an open-source ARM Amber core with a Special Functional Unit (SFU) for domain-specific acceleration, connected by a customizable network-on-chip. LOCUS achieves 3.1x performance-per-watt improvement over quad-core ARM processors found in commercial wearables. It was the first silicon tapeout from ECO Lab and the foundation for the Stitch architecture.</p>
+                    <dl class="chip-specs">
+                        <dt>Architecture</dt><dd>16-core message-passing, ARM Amber + SFU per tile</dd>
+                        <dt>Efficiency</dt><dd>3.1x perf/watt vs. quad-core ARM</dd>
+                        <dt>Application</dt><dd>Ultra-low-power wearable devices</dd>
+                    </dl>
+                    <a href="https://www.comp.nus.edu.sg/~tulika/CASES16.pdf" target="_blank" class="chip-link">CASES 2016</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/components.js"></script>
+</body>
+</html>

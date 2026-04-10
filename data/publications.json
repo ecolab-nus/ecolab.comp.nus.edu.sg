@@ -1,6 +1,18 @@
 [
   {
     "year": 2026,
+    "title": "SAEM: Stage-Aware Expert Management for Memory-Efficient MoE Inference in Chain-of-Thought Reasoning",
+    "authors": "Yujie Zhang, Bin Gao, Tulika Mitra",
+    "venue": "DAC 2026 (ACM/IEEE Design Automation Conference)"
+  },
+  {
+    "year": 2026,
+    "title": "RAGNMP: Leveraging Elimination Tree to Accelerate RAG with Near-Memory Processing",
+    "authors": "Dan Chen, Huize Li, Zhaoying Li, Huiying Lan, Xiang Liu, Zerui Li, Dan Wu, Bin Gao, Tulika Mitra",
+    "venue": "DAC 2026 (ACM/IEEE Design Automation Conference)"
+  },
+  {
+    "year": 2026,
     "title": "A Data-Driven Dynamic Execution Orchestration Architecture",
     "authors": "Zhenyu Bai, Pranav Dangi, Rohan Juneja, Zhaoying Li, Zhanglu Yan, Huiying Lan, Tulika Mitra",
     "venue": "ASPLOS 2026 (ACM International Conference on Architectural Support for Programming Languages and Operating Systems)",
