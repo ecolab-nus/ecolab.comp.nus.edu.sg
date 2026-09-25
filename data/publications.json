@@ -1,6 +1,15 @@
 [
   {
     "year": 2026,
+    "title": "TileLoom: Automatic Dataflow Planning for {Tile-Based} Languages on Spatial Dataflow Accelerators",
+    "authors": "Yujie Zhang, Bin Gao, Tulika Mitra",
+    "venue": "DAC 2026 (ACM/IEEE Design Automation Conference)",
+    "links" : {
+	    "paper": "https://www.usenix.org/system/files/osdi26-li-wei.pdf"
+    }
+  },
+  {
+    "year": 2026,
     "title": "SAEM: Stage-Aware Expert Management for Memory-Efficient MoE Inference in Chain-of-Thought Reasoning",
     "authors": "Yujie Zhang, Bin Gao, Tulika Mitra",
     "venue": "DAC 2026 (ACM/IEEE Design Automation Conference)"
