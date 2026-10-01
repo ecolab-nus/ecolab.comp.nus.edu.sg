@@ -1,1 +1,1 @@
-# Picasso-Lab
+# Ecolab in NUS.
