@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Featured Projects - ECO Lab</title>
-    <meta name="description" content="Featured research projects from ECO Lab — CGRA compilers (PANORAMA, HiMap, LISA), CGRA architectures (Plaid, FLEX, HyCUBE), and sparse AI accelerators (Canon, ZeD, SWAT).">
+    <meta name="description" content="Featured research projects from ECO Lab — CGRA compilers (PANORAMA, HiMap, LISA), CGRA architectures (Plaid, FLEX, HyCUBE), and sparse AI accelerators (Canon, Nexus, ZeD, SWAT).">
     <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
     <!-- Open Graph -->
     <meta property="og:title" content="Featured Projects - ECO Lab">
@@ -339,8 +339,22 @@
             </div>
         </div>
 
-        <!-- ZeD -->
+        <!-- Nexus -->
         <div class="research-card alt-bg" data-category="sparse">
+            <div class="research-img">
+                <img src="static/publications/nexus.png" alt="Nexus Machine mesh architecture and processing element with active message interfaces" loading="lazy">
+                <p class="img-caption">Nexus Machine architecture and processing element with opportunistic en-route execution</p>
+            </div>
+            <div class="research-body">
+                <h3>Nexus</h3>
+                <div class="research-subtitle">Active Message Inspired Reconfigurable Architecture</div>
+                <p>Nexus Machine accelerates irregular workloads such as sparse linear algebra and graph analytics by distributing tensors across a reconfigurable fabric and sending active messages that carry both instructions and data. By opportunistically executing instructions on idle processing elements along their route, Nexus balances runtime workloads and reduces data movement. Nexus achieves 1.9× performance and 1.7× fabric utilization compared to a generic CGRA baseline within the same power and area budget.</p>
+                <a href="https://arxiv.org/pdf/2502.12380" target="_blank" class="pub-btn">📄 View Publication</a>
+            </div>
+        </div>
+
+        <!-- ZeD -->
+        <div class="research-card" data-category="sparse">
             <div class="research-img">
                 <img src="static/publications/zed.png" alt="ZeD Architecture" loading="lazy">
                 <p class="img-caption">Comparison of storage costs of various sparse formats</p>
@@ -354,7 +368,7 @@
         </div>
 
         <!-- SWAT -->
-        <div class="research-card" data-category="sparse">
+        <div class="research-card alt-bg" data-category="sparse">
             <div class="research-img">
                 <img src="static/publications/swat.png" alt="SWAT Architecture" loading="lazy">
                 <p class="img-caption">Energy Efficiency of SWAT against SOTA GPU and FPGA implementations</p>
@@ -368,7 +382,7 @@
         </div>
 
         <!-- SPLIM -->
-        <div class="research-card alt-bg" data-category="sparse">
+        <div class="research-card" data-category="sparse">
             <div class="research-img">
                 <img src="static/publications/splim.jpg" alt="SPLIM Architecture" loading="lazy">
                 <p class="img-caption">SPLIM: Bridging Unstructured SpGEMM and Structured In-Situ Computing</p>
@@ -382,7 +396,7 @@
         </div>
 
         <!-- SADIMM -->
-        <div class="research-card" data-category="sparse">
+        <div class="research-card alt-bg" data-category="sparse">
             <div class="research-img">
                 <img src="static/publications/sadimm.jpg" alt="SADIMM Architecture" loading="lazy">
                 <p class="img-caption">SADIMM: DIMM-Based Near-Memory Processing for Sparse Attention</p>
@@ -396,7 +410,7 @@
         </div>
 
         <!-- ASADI -->
-        <div class="research-card alt-bg" data-category="sparse">
+        <div class="research-card" data-category="sparse">
             <div class="research-img">
                 <img src="static/publications/asadi.jpg" alt="ASADI Architecture" loading="lazy">
                 <p class="img-caption">ASADI: Diagonal-Based In-Situ Computing for Sparse Attention</p>
@@ -410,7 +424,7 @@
         </div>
 
         <!-- HyAtten -->
-        <div class="research-card" data-category="sparse">
+        <div class="research-card alt-bg" data-category="sparse">
             <div class="research-img">
                 <img src="static/publications/hyatten.jpg" alt="HyAtten Architecture" loading="lazy">
                 <p class="img-caption">HyAtten: Hybrid Photonic-Digital Architecture for Attention</p>
