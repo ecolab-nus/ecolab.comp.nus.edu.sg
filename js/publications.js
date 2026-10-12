@@ -75,6 +75,12 @@ function renderPublications(containerId, options = {}) {
                         }
                         html += `<br><span class="pub-authors">${pub.authors}</span><br>`;
                         html += `<span class="pub-venue">${pub.venue}</span>`;
+                        if (pub.award) {
+                            html += ` <span class="pub-award">🏆 ${pub.award}</span>`;
+                        }
+                        if (pub.highlight) {
+                            html += ` <span class="pub-highlight">${pub.highlight}</span>`;
+                        }
 
                         li.innerHTML = html;
                         ul.appendChild(li);
@@ -102,7 +108,7 @@ function renderPublications(containerId, options = {}) {
 
                 const terms = query.split(/\s+/);
                 const filtered = pubs.filter(p => {
-                    const text = (p.title + ' ' + p.authors + ' ' + p.venue + ' ' + p.year).toLowerCase();
+                    const text = (p.title + ' ' + p.authors + ' ' + p.venue + ' ' + p.year + ' ' + (p.award || '') + ' ' + (p.highlight || '')).toLowerCase();
                     return terms.every(t => text.includes(t));
                 });
 

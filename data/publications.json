@@ -28,11 +28,47 @@
   },
   {
     "year": 2026,
+    "title": "HiVec: Scalable and Energy Efficient CGRA in a RISC-V SoC for Wearables",
+    "authors": "Rakshith Harish, Rohan Juneja, Pranav Dangi, Zhenyu Bai, Vishnu Nambiar, Yi Sheng Chong, Bin Zhao, Vishruti Ranjan, Rahul Dutta, Li-Shiuan Peh, Tulika Mitra, Anh Tuan Do",
+    "venue": "HotChips 2026 (Hot Chips Symposium)"
+  },
+  
+  {
+    "year": 2026,
+    "title": "SparrowSNN: A Hardware/software Co-design for Energy Efficient Low Power Application",
+    "authors": "Zhenyu Bai, Zhanglu Yan, Bin Gao, Tulika Mitra, Weng-Fai Wong",
+    "venue": "IEEE TCAD (IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems)",
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/11574685"
+    }
+  },
+  {
+    "year": 2026,
     "title": "A Data-Driven Dynamic Execution Orchestration Architecture",
     "authors": "Zhenyu Bai, Pranav Dangi, Rohan Juneja, Zhaoying Li, Zhanglu Yan, Huiying Lan, Tulika Mitra",
     "venue": "ASPLOS 2026 (ACM International Conference on Architectural Support for Programming Languages and Operating Systems)",
+    "award": "Best Paper Honorable Mention",
     "links": {
       "paper": "https://arxiv.org/abs/2602.17119"
+    }
+  },
+  {
+    "year": 2026,
+    "title": "HALO: Hardware-aware quantization with low critical-path-delay weights for LLM acceleration",
+    "authors": "Rohan Juneja, Shivam Aggarwal, Safeen Huda, Tulika Mitra, Li-Shiuan Peh",
+    "venue": "AAAI 2026 (AAAI Conference on Artificial Intelligence)",
+    "highlight": "Oral Presentation",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2502.19662"
+    }
+  },
+  {
+    "year": 2026,
+    "title": "Condensed data expansion using model inversion for knowledge distillation",
+    "authors": "Kuluhan Binici, Shivam Aggarwal, Cihan Acar, Nam Trung Pham, Karianto Leman, Gim Hee Lee, Tulika Mitra",
+    "venue": "AAAI 2026 (AAAI Conference on Artificial Intelligence)",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2408.13850v2"
     }
   },
   {

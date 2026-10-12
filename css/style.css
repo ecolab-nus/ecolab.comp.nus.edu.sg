@@ -672,6 +672,31 @@ blockquote cite {
     font-style: italic;
     font-size: 13px;
 }
+.pub-award {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 10px;
+    border-radius: 12px;
+    background: #fff4e5;
+    color: #b35c00;
+    border: 1px solid var(--nus-orange);
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    vertical-align: 1px;
+}
+.pub-highlight {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 0 8px;
+    border-radius: 12px;
+    color: var(--nus-blue);
+    border: 1px solid #b6c6da;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    vertical-align: 1px;
+}
 .pub-filter {
     display: flex;
     gap: 8px;
